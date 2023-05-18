@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e48f1b;
+}
+.login_form::before{
+    content: " ";
+    position: absolute;
+    top: -64px;
+    left: 187px;
+    width: 100px;
+    height: 100px;
+    border: 6px black solid;
+    background-color: white;
+    border-radius: 50%;
+}
+.user_icon{
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    top: -33px;
+    left: 221px;
+}
+.login_form{
+    width: 450px;
+    height: 650px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: black;
+    text-align: center;
+    border-radius: 40px;
+}
+.login_form h1{
+    color: white;
+    font-weight: bold;
+}
+.login_form label{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    margin-right: 10px;
+}
+.login_form input[type = "text"],
+.login_form input[type = "email"],
+.login_form input[type = "password"]{
+    border: 0;
+    background: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 4px solid white; 
+    text-align: center;
+    padding: 15px 10px;
+    outline: none;
+    width: 200px;
+    color: white ;
+    transition: .5s;
+    z-index: 3;
+}
+.show_pass,
+.hide_pass{
+    position: absolute;
+    color: white;
+    right: 107px;
+    bottom: 373px;
+    cursor: pointer;
+}
+.show_pass_con,
+.hide_pass_con{
+    position: absolute;
+    color: white;
+    right: 107px;
+    bottom: 280px;
+    cursor: pointer;
+}
+/* .login_form input[type = "text"]:focus,
+.login_form input[type = "email"]:focus,
+.login_form input[type = "password"]:focus{
+    width: 250px;
+    border-color: yellow;
+} */
+.login_form input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 2px solid yellow; 
+    text-align: center;
+    padding: 15px 40px;
+    outline: none;
+    color: white ;
+    transition: .5s;
+    cursor: pointer;
+}
+.login_form input[type = "submit"]:hover{
+    background-color: yellow ;
+    color: black;
+    font-size:larger;
+    font-weight: bold;
+}
+
+
+.Confirm_form{
+    z-index: 3 !important;
+}
+.Confirm_form h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.Confirm_form input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.Confirm_form .baketologin{
+    position: absolute;
+    top: 38px;
+    left: 36px;
+    cursor: pointer;
+    color: white;
+    font-size: 55px;
+}
